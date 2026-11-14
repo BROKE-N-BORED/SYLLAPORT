@@ -1,0 +1,37 @@
+# Syllaport .gitignore — secrets rule (immutable): sensitive information and
+# APIs are NEVER in code. They live in gitignored files only.
+.env
+.env.*
+*.env
+local_config.py
+local_config.json
+providers.json
+*.key
+*.pem
+id_rsa*
+secrets/
+credentials.json
+credentials.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Local user data (never committed: it holds the user's own study data)
+data/
+*.bak1
+*.bak2
+*.bak3
+*.bak4
+*.bak5
+syllaport.log*
+
+# Qt / OS
+*.pro.user
+.DS_Store
+Thumbs.db
